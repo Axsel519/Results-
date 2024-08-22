@@ -1,0 +1,256 @@
+/*general*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*start Project*/
+
+body {
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2vw 15vw;
+    border-radius: 4vw;
+}
+
+/*The project is divided into two sides, right and left.*/
+/*start left*/
+
+.Left {
+    background-color: rgb(72 54 242);
+    margin: 0% -2%;
+    padding: 0;
+    border-radius: 4vw;
+    width: 55%;
+    height: 41vw;
+}
+
+
+h2 {
+    text-align: center;
+    color: rgb(183 173 255);
+    font-size: larger;
+}
+
+
+.Result {
+    background-color: rgb(71 44 213);
+    border-radius: 100%;
+    width: 60%;
+    height: 17vw;
+    text-align: center;
+    margin: 0% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+span {
+    color: white;
+    font-size: 4vw;
+    font-family: system-ui;
+}
+
+p {
+    color: rgb(183 173 255);
+}
+
+.Result p {
+    color: rgb(183 173 255);
+    margin: 2vw 0vw;
+    font-size: 2vw;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+}
+
+.ph1 {
+    padding: 1vw 3vw;
+    text-align: center;
+    width: 24vw;
+}
+
+/*start right*/
+
+.Right {
+    margin: 0vw 40vw;
+}
+
+.Elements {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: -1vw -26vw;
+    width: 30vw;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0vw -10vw;
+    height: 5vw;
+}
+
+small{
+    color: rgb(197 199 214);
+}
+
+.icon1{
+    background-color: rgb(255 246 245);
+    border-radius: 2vw
+}
+
+.icon2{
+    background-color: rgb(255 251 242);
+    border-radius: 2vw
+}
+
+.icon3 {
+    background-color: rgb(242 251 250);
+    border-radius: 2vw
+}
+
+.icon4{
+    background-color: rgb(243 243 253);
+        border-radius: 2vw
+}
+
+img {
+    padding: 1vw;
+}
+
+.icon3 div{
+    margin: 0;
+}
+
+big {
+    padding: 0vw 2vw;
+}
+
+button {
+    width: 20vw;
+    font-size: large;
+    color: white;
+    background-color: rgb(48 59 89);
+    border-radius: 3vw;
+    height: 5vw;
+    margin: 3vw -7vw;
+}
+
+button:hover .stars{
+    background-color: rgb(70 54 241);
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+h1 {
+    margin: 2vw -36vw;
+    font-size: larger;
+}
+
+/*To control mobile screens up to 480px */
+
+@media screen and (max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        width: 110%;
+        margin: 0;
+        padding: 0;
+        height: 220vw;
+    }
+
+    .Left {
+        width: 95%;
+        height: 90vw;
+        border-radius: 0vw 0vw 20vw 20vw;
+        margin: -13vw -2vw;
+    }
+
+    span {
+        font-size: 7vw;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(183 173 255);
+        font-size: larger;
+        padding: 4vw;
+    }
+
+    .Result {
+        width: 35%;
+        height: 35vw;
+        margin: 0vw 35.5vw;
+    }
+
+    span {
+        font-size: 15vw;
+    }
+
+    .Result p {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .ph1 {
+        width: 66vw;
+        font-size: large;
+        padding: 0vw 20vw;
+        margin-top: -3vw;
+    }
+
+    .Right {
+        margin: 0vw 50vw;
+    }
+
+    .icon1, 
+    .icon2, 
+    .icon3, 
+    .icon4 {
+        width: 250%;
+        height: 15vw;
+    }
+
+    h1 {
+        margin: 5vw -36vw;
+        font-size: revert;
+    }
+
+    button {
+        width: 70vw;
+        font-size: x-large;
+        border-radius: 10vw;
+        height: 17vw;
+        margin: 5vw -9vw;
+    }
+
+}
+
